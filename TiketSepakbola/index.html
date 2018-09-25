@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Mari Mengaji</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/materialize.css">
+	
+</head>
+<body>
+		<nav class="nav transparent">
+	    <div class="nav-wrapper transparent">
+		   <ul id="nav-mobile" class="left hide-on-med-and-down">
+	        <li><a href="sass.html">Login</a></li>
+	        <li> <a href="#" id="search-icon"><i class="material-icons">search</i></a>
+	        </li>
+	      </ul>
+	      <form class="left" width="35%" height="40%">
+	        <div class="input-field" style="display: none;" id="search-div">
+	          <input id="search-txt" type="search">
+	          <label class="labelsearch" for="search-txt">Search</label>
+	          <i class="material-icons" id="close-icon">close</i>
+	        </div>
+	      </form>
+	      <a href="#" class="brand-logo center">TiketBol</a>
+	      <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+	      <ul id="nav-mobile" class="right hide-on-med-and-down">
+	        <li><a href="Tim.html">Tim</a></li>
+	        <li><a href="Jadwal.html">Jadwal Pertandingan</a></li>
+	        <li><a href="PesanTiket.html">Pesan Tiket</a></li>
+	      </ul>
+	    </div>
+	  </nav>
+	 <ul class="sidenav" id="mobile-demo">
+	    <li><a href="Tim.html">Tim</a></li>
+	    <li><a href="Jadwal.html">Jadwal Pertandingan</a></li>
+	    <li><a href="PesanTiket.html">Pesan Tiket</a></li>
+	  </ul>
+		<header class="imgheader" >
+		
+		</header>
+        
+
+	<script src="jquery-3.3.1.js"></script>
+	<script src="js/materialize.js"></script>
+
+	<script>
+		  $(document).ready(function(){
+    		$('.sidenav').sidenav();
+  		  });
+	</script>
+	<script>
+		$(document).ready(function(e){
+			$("#search-icon").click(function(e){
+				$("#search-icon").hide();
+				$("#search-div").fadeIn();
+				$("#search-txt").focus();
+			});
+			$("#close-icon").click(function(e){
+				$("#search-div").fadeOut();
+				$("#search-icon").fadeIn();
+			});
+			$("#search-txt").blur(function(e){
+				$("#search-div").hide();
+				$("#search-icon").fadeIn();
+			});
+
+		});
+	</script>
+</body>
+</html>

@@ -1,0 +1,16 @@
+.imgheader{
+	background: url(../Stadion.jpg);
+	background-size: cover ;
+	height: 600px;
+
+}
+nav{
+	position: absolute;
+}
+.labelsearch{
+	margin-top: 20px;
+}
+
+nav:hover{
+	background-color: yellow;
+}
